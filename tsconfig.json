@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["Multer"],
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,

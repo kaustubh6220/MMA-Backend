@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, UseInterceptors, Upl
 import { AdminService } from './admin.service';
 import { CreateAdminDto } from './dto/create-admin.dto';
 import { UpdateAdminDto } from './dto/update-admin.dto';
-import { FileInterceptor } from '@nestjs/platform-express';
+import { FileInterceptor, MulterModule } from '@nestjs/platform-express';
 import { fstat, readFileSync } from 'fs';
 import * as fs from 'fs';
 import csvParser, { CsvParser } from 'csv-parser';
@@ -10,6 +10,7 @@ import { Request, Response } from 'express';
 import { Readable } from 'stream';
 // const csv =  require('csv-parser')
 import csvToJson from 'csvtojson';
+import { diskStorage } from 'multer';
 import { InjectConnection } from '@nestjs/mongoose';
 import { Connection } from 'mongoose';
 import { MentorService } from 'src/mentor/mentor.service';
