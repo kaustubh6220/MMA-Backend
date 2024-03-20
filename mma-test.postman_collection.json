@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "7da358b5-0d2f-456b-916b-050412b9da4a",
+		"name": "mma-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31596913"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Add Students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_name\": \"test6\",\r\n    \"year_of_admission\": 2023,\r\n    \"student_class\": \"SY\",\r\n    \"student_email_id\": \"test6@gmail.com\",\r\n    \"date_of_birth\": \"12/12/2023\",\r\n    \"birth_place\": \"pune\",\r\n    \"state\": \"Maharashtra\",\r\n    \"nationality\": \"India\",\r\n    \"religion\": \"Hindu\",\r\n    \"father_name\": \"testFather\",\r\n    \"occupation\": \"Business\",\r\n    \"parents_mobile\": 888888888,\r\n    \"guardian_name\": \"testGuardian\",\r\n    \"address\": \"Pune\",\r\n    \"guardian_profession\": \"Business\",\r\n    \"guardian_mobile_number\": 7777777777,\r\n    \"guardian_relation\": \"uncle\",\r\n    \"annual_income\": \"12000000\",\r\n    \"present_address\": \"Pune\",\r\n    \"pin_code\": \"412301\",\r\n    \"permanent_address\": \"Pune\",\r\n    \"student_id\": \"\",\r\n    \"enrollment_number\": \"MIT120121\",\r\n    \"mentor_id\": \"Mentor123\",\r\n    \"mentor_name\":\"abces\",\r\n    \"batch\":\"A\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/student/addStudent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"addStudent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Students",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student_name\": \"test6\",\r\n    \"year_of_admission\": 2023,\r\n    \"student_class\": \"SY\",\r\n    \"student_email_id\": \"test6@gmail.com\",\r\n    \"date_of_birth\": \"12/12/2023\",\r\n    \"birth_place\": \"pune\",\r\n    \"state\": \"Maharashtra\",\r\n    \"nationality\": \"India\",\r\n    \"religion\": \"Hindu\",\r\n    \"father_name\": \"testFather\",\r\n    \"occupation\": \"Business\",\r\n    \"parents_mobile\": 888888888,\r\n    \"guardian_name\": \"testGuardian\",\r\n    \"address\": \"Pune\",\r\n    \"guardian_profession\": \"Business\",\r\n    \"guardian_mobile_number\": 7777777777,\r\n    \"guardian_relation\": \"uncle\",\r\n    \"annual_income\": \"12000000\",\r\n    \"present_address\": \"Pune\",\r\n    \"pin_code\": \"412301\",\r\n    \"permanent_address\": \"Pune\",\r\n    \"student_id\": \"\",\r\n    \"enrollment_number\": \"MIT120121\",\r\n    \"mentor_id\": \"Mentor123\",\r\n    \"mentor_name\":\"abces\",\r\n    \"batch\":\"A\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/addStudent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"addStudent"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "838"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"346-SEmK3ycUlirePGOcd+pgsNXbe1M\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 05 Jan 2024 09:06:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"student_name\": \"test6\",\n        \"year_of_admission\": 2023,\n        \"student_class\": \"SY\",\n        \"student_email_id\": \"test6@gmail.com\",\n        \"date_of_birth\": \"12/12/2023\",\n        \"birth_place\": \"pune\",\n        \"state\": \"Maharashtra\",\n        \"nationality\": \"India\",\n        \"religion\": \"Hindu\",\n        \"father_name\": \"testFather\",\n        \"occupation\": \"Business\",\n        \"parents_mobile\": \"888888888\",\n        \"guardian_name\": \"testGuardian\",\n        \"guardian_profession\": \"Business\",\n        \"guardian_mobile_number\": \"7777777777\",\n        \"guardian_relation\": \"uncle\",\n        \"annual_income\": \"12000000\",\n        \"present_address\": \"Pune\",\n        \"pin_code\": \"412301\",\n        \"permanent_address\": \"Pune\",\n        \"student_id\": \"1ZNLDA4JkBoPZx\",\n        \"enrollment_number\": \"MIT120121\",\n        \"mentor_id\": \"Mentor123\",\n        \"mentor_name\": \"abces\",\n        \"batch\": \"A\",\n        \"_id\": \"6597c69f634d75145c04e607\",\n        \"updatedAt\": \"2024-01-05T09:06:39.841Z\",\n        \"createdAt\": \"2024-01-05T09:06:39.841Z\",\n        \"__v\": 0\n    },\n    \"message\": \"Student details added successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Students",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/student/getStudents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"getStudents"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Students",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student_name\": \"test1\",\r\n    \"year_of_admission\": 2023,\r\n    \"student_class\": \"SY\",\r\n    \"student_email_id\": \"test1@gmail.com\",\r\n    \"date_of_birth\": \"12/12/2023\",\r\n    \"birth_place\": \"pune\",\r\n    \"state\": \"Maharashtra\",\r\n    \"nationality\": \"India\",\r\n    \"religion\": \"Hindu\",\r\n    \"father_name\": \"testFather\",\r\n    \"occupation\": \"Business\",\r\n    \"parents_mobile\": 888888888,\r\n    \"guardian_name\": \"testGuardian\",\r\n    \"address\": \"Pune\",\r\n    \"guardian_profession\": \"Business\",\r\n    \"guardian_mobile_number\": 7777777777,\r\n    \"guardian_relation\": \"uncle\",\r\n    \"annual_income\": \"12000000\",\r\n    \"present_address\": \"Pune\",\r\n    \"pin_code\": \"412301\",\r\n    \"permanent_address\": \"Pune\",\r\n    \"student_id\": \"\",\r\n    \"enrollment_number\": \"MIT120121\",\r\n    \"mentor_id\": \"Mentor123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/student/getStudents",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"getStudents"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7249"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c51-J6RGPMLGAY+pDuoSARs8Lc9t9ow\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 05 Jan 2024 09:09:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"data\": [\n        {\n            \"_id\": \"6597c69f634d75145c04e607\",\n            \"student_name\": \"test6\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test6@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"1ZNLDA4JkBoPZx\",\n            \"enrollment_number\": \"MIT120121\",\n            \"mentor_id\": \"Mentor123\",\n            \"mentor_name\": \"abces\",\n            \"batch\": \"A\",\n            \"updatedAt\": \"2024-01-05T09:06:39.841Z\",\n            \"createdAt\": \"2024-01-05T09:06:39.841Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"657957e5367cd644786adc5f\",\n            \"student_name\": \"test2\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Mumbai\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"nYqEtwvQ1zRz0W\",\n            \"enrollment_number\": \"MIT120121\",\n            \"mentor_id\": \"Mentor55555\",\n            \"updatedAt\": \"2023-12-13T07:06:13.721Z\",\n            \"createdAt\": \"2023-12-13T07:06:13.721Z\",\n            \"__v\": 0,\n            \"address\": \"Mumbai\"\n        },\n        {\n            \"_id\": \"657957532627c1041af558f2\",\n            \"student_name\": \"test5\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"VGniYi8HEG9ZR1\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-13T07:03:47.923Z\",\n            \"createdAt\": \"2023-12-13T07:03:47.923Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6579569cb63dbc4009f6c40b\",\n            \"student_name\": \"test4\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"abyTPVAZ17OQu9\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-13T07:00:45.000Z\",\n            \"createdAt\": \"2023-12-13T07:00:45.000Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6579560fb63dbc4009f6c408\",\n            \"student_name\": \"test4\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"Qc5JWtQebgSWj1\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-13T06:58:23.160Z\",\n            \"createdAt\": \"2023-12-13T06:58:23.160Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6579558eb91f07bc3967eeb1\",\n            \"student_name\": \"test3\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"ijqczdRwD0kxhm\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-13T06:56:15.001Z\",\n            \"createdAt\": \"2023-12-13T06:56:15.001Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"656eb6d15e759b516b4f0085\",\n            \"student_name\": \"test2\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"rsCEqvgQfN0Odh\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-05T05:36:17.086Z\",\n            \"createdAt\": \"2023-12-05T05:36:17.086Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"656eb6a6a79f00f1c87c3091\",\n            \"student_name\": \"test2\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-05T05:35:34.353Z\",\n            \"createdAt\": \"2023-12-05T05:35:34.353Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"656eb3feb686277dd560cb84\",\n            \"student_name\": \"test2\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-05T05:24:14.307Z\",\n            \"createdAt\": \"2023-12-05T05:24:14.307Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"656eb100502399cb24aa87fa\",\n            \"student_name\": \"test2\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-05T05:11:29.001Z\",\n            \"createdAt\": \"2023-12-05T05:11:29.001Z\",\n            \"__v\": 0,\n            \"address\": \"Mumbai\"\n        }\n    ],\n    \"message\": \"Get Students Details Ok!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Student by student id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/student/getStudentById?student_id=rsCEqvgQfN0Odh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"getStudentById"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "rsCEqvgQfN0Odh"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Student by student id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/student/getStudentById?student_id=Qc5JWtQebgSWj1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"student",
+										"getStudentById"
+									],
+									"query": [
+										{
+											"key": "student_id",
+											"value": "Qc5JWtQebgSWj1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "768"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"300-VHNFmKUWJubHMXV3arUgsUrZe6k\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 05 Jan 2024 09:07:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"data\": [\n        {\n            \"_id\": \"6579560fb63dbc4009f6c408\",\n            \"student_name\": \"test4\",\n            \"year_of_admission\": 2023,\n            \"student_class\": \"SY\",\n            \"student_email_id\": \"test1@gmail.com\",\n            \"date_of_birth\": \"12/12/2023\",\n            \"birth_place\": \"pune\",\n            \"state\": \"Maharashtra\",\n            \"nationality\": \"India\",\n            \"religion\": \"Hindu\",\n            \"father_name\": \"testFather\",\n            \"occupation\": \"Business\",\n            \"parents_mobile\": \"888888888\",\n            \"guardian_name\": \"testGuardian\",\n            \"guardian_profession\": \"Business\",\n            \"guardian_mobile_number\": \"7777777777\",\n            \"guardian_relation\": \"uncle\",\n            \"annual_income\": \"12000000\",\n            \"present_address\": \"Pune\",\n            \"pin_code\": \"412301\",\n            \"permanent_address\": \"Pune\",\n            \"student_id\": \"Qc5JWtQebgSWj1\",\n            \"enrollment_number\": \"MIT120121\",\n            \"updatedAt\": \"2023-12-13T06:58:23.160Z\",\n            \"createdAt\": \"2023-12-13T06:58:23.160Z\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"Get Students Details Ok!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_name\": \"test2\",\r\n    \"year_of_admission\": 2023,\r\n    \"student_class\": \"SY\",\r\n    \"student_email_id\": \"test1@gmail.com\",\r\n    \"date_of_birth\": \"12/12/2023\",\r\n    \"birth_place\": \"pune\",\r\n    \"state\": \"Maharashtra\",\r\n    \"nationality\": \"India\",\r\n    \"religion\": \"Hindu\",\r\n    \"father_name\": \"testFather\",\r\n    \"occupation\": \"Business\",\r\n    \"parents_mobile\": 888888888,\r\n    \"guardian_name\": \"testGuardian\",\r\n    \"address\": \"Pune\",\r\n    \"guardian_profession\": \"Business\",\r\n    \"guardian_mobile_number\": 7777777777,\r\n    \"guardian_relation\": \"uncle\",\r\n    \"annual_income\": \"12000000\",\r\n    \"present_address\": \"Pune\",\r\n    \"pin_code\": \"412301\",\r\n    \"permanent_address\": \"Pune\",\r\n    \"student_id\": \"\",\r\n    \"enrollment_number\": \"MIT120121\",\r\n    \"mentor_id\": \"Mentor123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/student/updateStudent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"updateStudent"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mentor",
+			"item": [
+				{
+					"name": "Add Mentor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"mentor_id\":\"\",\r\n\"mentor_name\":\"Prof. test mentor\",\r\n\"designation\":\"Assistant Professor\",\r\n\"experience\":\"4 years\",\r\n\"mobile_number\":888888888,\r\n\"class_teacher_flag \":true,\r\n\"class_teacher_class\":\"SY10\",\r\n\"assign_batch\":\"A\",\r\n\"mentor_email\":\"mentor@mituniversity.edu.in\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/mentor/addMentor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mentor",
+								"addMentor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Mentor",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"mentor_id\":\"\",\r\n\"mentor_name\":\"Prof. test mentor\",\r\n\"designation\":\"Assistant Professor\",\r\n\"experience\":\"4 years\",\r\n\"mobile_number\":888888888,\r\n\"class_teacher_flag \":true,\r\n\"class_teacher_class\":\"SY10\",\r\n\"assign_batch\":\"A\",\r\n\"mentor_email\":\"mentor@mituniversity.edu.in\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/mentor/addMentor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"mentor",
+										"addMentor"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "343"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"157-vT868r0IqXocFmOrcojaBD0VVP0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 05 Jan 2024 09:09:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"mentor_id\": \"mentor_Prof. test mentor_-A4\",\n        \"mentor_name\": \"Prof. test mentor\",\n        \"designation\": \"Assistant Professor\",\n        \"mobile_number\": 888888888,\n        \"class_teacher_class\": \"SY10\",\n        \"assign_batch\": \"A\",\n        \"mentor_email\": \"mentor@mituniversity.edu.in\",\n        \"_id\": \"6597c760634d75145c04e60d\",\n        \"__v\": 0\n    },\n    \"message\": \"Mentor details added successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Mentors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/mentor/getMentor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mentor",
+								"getMentor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Upload mentor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/College/MMA/mentor_upload_template.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/uploadMentor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"uploadMentor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Upload mentor",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/College/MMA/mentor_upload_template.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/uploadMentor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"uploadMentor"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"64-j6RIo/vIHL0SbChYLf2lr5sLUZI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Mar 2024 10:40:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        \"khushal kunjir\",\n        \"shahin makubhai\"\n    ],\n    \"message\": \"successfully added 2 mentors\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Upload student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/College/MMA/student_upload_template.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/uploadStudent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"uploadStudent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Upload student",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/College/MMA/student_upload_template.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/uploadStudent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"uploadStudent"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-85Dd2dDFZOXfNgHPfkipeKSddFY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Mar 2024 10:54:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        \"kaustub mane\",\n        \"jeet\"\n    ],\n    \"message\": \"successfully added 2 students\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
